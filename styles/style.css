@@ -171,6 +171,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 .article__title {
+  font-size: inherit;
   color: var(--accent-color-text);
   font-weight: 700;
 }
