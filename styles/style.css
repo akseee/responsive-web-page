@@ -1,5 +1,248 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-size: 18px;
+  line-height: 130%;
+  font-family: var(--main-font-family, "IBM Plex mono", monospace);
+  background-color: var(--main-background-color);
+  background-image: var(--b-g); /* SDELAT CHEREZ PEREMENNUY */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: var(--main-text-color);
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.header {
+  display: grid;
+  margin: 20px;
+  grid-template-rows: 300px max-content 300px;
+  align-items: center;
+}
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after,
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::after {
+  border-inline-end: 1px solid var(--button-color);
+  border-block-start: 1px solid var(--button-color);
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.decorated-zone::before {
+  border-inline-start: 1px solid var(--button-color);
+  border-block-end: 1px solid var(--button-color);
+  inset-inline-start: 0;
+  inset-block-end: 0;
+}
+
+.decorated-zone__rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
+  line-height: 138.889%;
+  inset-inline-end: 10px;
+  inset-block-start: 0;
+}
+
+.decorated-zone__rec::before {
+  content: "rec";
+  text-transform: uppercase;
+  color: var(--accent-color);
+  line-height: 138.889%;
+}
+
+.decorated-zone__rec::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--accent-color);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 4px var(--accent-color, #ff0070);
+}
+
+.header__theme-menu {
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  color: var(--button-color);
+}
+
+.header__theme-menu-button {
+  padding: 0 13px;
+  text-transform: lowercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border: none;
+  border-bottom: 1px solid var(--button-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--button-color);
+}
+
+.header__title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  margin-inline-start: -20px;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--shadow);
+}
+
+.header__description {
+  inline-size: 50%;
+  justify-self: flex-end;
+  align-self: center;
+  font-weight: 700;
+}
+.title-decor {
+  background-color: var(--background-accent-color);
+  color: var(--text-color);
+}
+
+
+
+
+.main {
+  margin-block-start: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.main__content {
+  margin: 0 20px;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 3px 0 var(--accent-color);
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: 1px solid var(--main-text-color);
+}
+
+.article-1 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+}
+.article__title {
+  color: var(--accent-color-text);
+  font-weight: 700;
+}
+.content-1__article__list {
+display: grid;
+grid-template-rows: 1fr 1fr;
+gap: 20px;
+}
+
+.article__list-item {
+}
+.article__subtitle {
+  background-color: var(--background-accent-color);
+  color:var(--text-color);
+  margin-block-end: 10px;
+}
+.article__text {
+}
+
+
+
+ /*  */ 
+ /*  */
+ /*  */
+ /*  */
+ /*  */
+
+@media (1024px >= width > 768px) {
+  .page {
+    color: red;
+  }
+  .header {
+    grid-template-rows: 443px max-content 443px;
+  }
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+  }
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  
+
+
+}
+
+
+@media (width <= 768px) {
+  .page {
+    color: green;
+  }
+  .header {
+    margin: 10px;
+    grid-template-rows: 228px max-content 228px;
+  }
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+  }
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: end;
+  }
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -10px;
+  }
+  .header__description {
+    inline-size: 100%;
+  }
 }
