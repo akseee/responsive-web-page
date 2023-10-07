@@ -17,7 +17,7 @@
 .header {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr max-content 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   padding: 20px;
 }
@@ -115,6 +115,7 @@
 }
 
 .header__title {
+  align-self: flex-start;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
   margin-inline-start: -20px;
@@ -136,8 +137,8 @@
 /* MAIN */
 
 .main {
-  margin-block-start: 80px;
   margin-block-end: 60px;
+  margin-block-start: 60px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -242,6 +243,16 @@ gap: 20px;
 .article__text {
 }
 
+
+
+
+
+
+
+
+.footer {
+  height: 100vw;
+}
 
 img {
   width: 100px;
