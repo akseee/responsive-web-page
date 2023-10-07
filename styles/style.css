@@ -237,7 +237,7 @@ img {
 
 
 /* ПЛАНШЕТ */
-@media (1024px >= width > 768px) {
+@media (1024px > width >= 768px) {
   .page {
     color: red;
   }
@@ -288,7 +288,7 @@ img {
 }
 
 /* МОБИЛЬНЫЙ */
-@media (width <= 768px) {
+@media (width < 768px) {
   .page {
     color: green;
   }
