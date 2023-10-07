@@ -328,7 +328,8 @@ img {
 
 
   .article-1 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .content-1__article__list {
@@ -336,6 +337,9 @@ img {
   flex-direction: column;
   gap: 20px;
   }
+
+
+
 
   .article-2 {
     grid-template-columns: 1fr; 
@@ -350,4 +354,16 @@ img {
     grid-template-columns: 1fr;
   }
   
+
+
+  .article-3 {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .content__article-list-3 {
+    grid-column: 2 / -1; 
+    display: grid;
+  }
+
 }
