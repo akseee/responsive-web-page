@@ -322,6 +322,9 @@ img {
     margin-block-start: 60px;
   }  
 
+  .main__content {
+    margin: 0 10px;
+  }
 
   .article-1 {
     display: flex;
