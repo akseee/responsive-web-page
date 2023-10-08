@@ -203,7 +203,7 @@
 
 .article-3 {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -277,10 +277,6 @@
 }
 
 @media (1024px > width >= 768px) {
-  .page {
-    color: red;
-  }
-
   .header__theme-menu {
     justify-self: end;
     align-self: center;
@@ -291,11 +287,12 @@
     justify-content: end;
   }
 
-  .article-2 {
-    display: grid;
+  .article-1 {
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: max-content;
-    gap: var(--gap, 20px);
+  }
+
+  .article-3 {
+    grid-template-columns: 1fr 2fr;
   }
 
   .content__article-list-2 {
