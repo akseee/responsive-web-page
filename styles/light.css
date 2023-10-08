@@ -18,3 +18,21 @@
 .theme_light .decorated-zone__rec {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --b-g: url(/images/cover-image-light.png);
+    --background-accent-color:  #ff8dcb;
+    --title-color: #ffc2e6;
+    --main-text-color: #353430;
+    --shadow: #ff0070;
+    --text-color: #353430;
+    --accent-color: #ff8dcb;
+    --accent-color-text: #353430;
+    --button-color: #353430;
+    --hover: #32312d66;
+  }
+  .decorated-zone__rec {
+    display: none;
+  }
+}
