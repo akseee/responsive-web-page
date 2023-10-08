@@ -386,10 +386,6 @@
   }
 
   .article-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .article-3 {
     display: flex;
     flex-direction: column;
   }
