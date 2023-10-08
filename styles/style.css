@@ -140,7 +140,7 @@
 }
 
 .main__content {
-  padding: 0 20px;
+  padding: 0 var(--gap);
 }
 
 .link {
@@ -162,7 +162,7 @@
 
 .article-1 {
   display: grid;
-  gap: 20px;
+  gap: var(--gap);
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -176,7 +176,7 @@
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .article__subtitle {
@@ -187,7 +187,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: max-content;
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .content__article-list-2 {
@@ -196,19 +196,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: max-content;
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .article-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .content__article-list-3 {
   grid-column: 2 / -1;
   display: grid;
-  gap: 20px;
+  gap: var(--gap);
 }
 
 .subtitle-advice {
@@ -228,7 +228,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: minmax(192px, 260px) minmax(230px, 315px) minmax(318xp, 428px);
-  gap: 20px;
+  gap: var(--gap);
 }
 /*     grid-template-rows: 192px 230px 318px;
  */
@@ -293,7 +293,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: max-content;
-    gap: 20px;
+    gap: var(--gap);
   }
 
   .content__article-list-2 {
@@ -372,7 +372,7 @@
   .content-1__article__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--gap);
   }
 
   .article-2 {
@@ -402,5 +402,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .gallery__title {
+    margin-block-end: 10px;
   }
 }
