@@ -12,6 +12,7 @@
   --desktop-title-f-z:  clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --button-color: #353430;
   --hover: #32312d66;
+  --gap: 20px;
 }
 
 .theme_light .decorated-zone__rec {
