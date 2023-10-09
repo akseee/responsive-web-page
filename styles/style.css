@@ -1,7 +1,7 @@
 .page {
   font-size: 18px;
   line-height: 130%;
-  font-family: var(--main-font-family, "IBM Plex mono", monospace);
+  font-family: "IBM Plex mono", monospace;
   background-image: var(--b-g, url(/images/cover-image-dark.png));
   background-position: center;
   background-size: cover;
@@ -304,10 +304,6 @@
   .gallery__list {
     grid-template-rows: 192px 230px 318px;
   }
-
-  .page .theme_light {
-    --shadow: #ffc2e6;
-  }
 }
 
 
@@ -394,8 +390,5 @@
   }
   .gallery__title {
     margin-block-end: 10px;
-  }
-  .page .theme_light {
-    --shadow: #ffc2e6;
   }
 }
