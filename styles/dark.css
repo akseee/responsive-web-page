@@ -2,7 +2,7 @@
   display: flex;
 }
 
-page.theme_dark {
+.page.theme_dark {
   --b-g: url(/images/cover-image-dark.png);
   --background-accent-color: #ff0070;
   
