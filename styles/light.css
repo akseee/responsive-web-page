@@ -36,10 +36,10 @@
   }
 }
 
-@media (prefers-color-scheme: light) and (1024px > width)  {
+@media (prefers-color-scheme: light) and (1024px > width) {
   .page {
     --shadow: #ff8dcb;
-}
+  }
   .page.theme_light {
     --shadow: #ff8dcb;
   }
