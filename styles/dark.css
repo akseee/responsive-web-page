@@ -1,4 +1,7 @@
-.page.theme_dark {
+.theme_dark .decorated-zone__rec {
+  display: flex;
+}
+page.theme_dark {
   --main-font-family: 'IBM Plex mono', monospace;
   --b-g: url(/images/cover-image-dark.png);
   --background-accent-color: #ff0070;
@@ -28,6 +31,7 @@
     --button-color: #ff0070;
     --hover: #ff007066;
   }
+  
   .decorated-zone__rec {
     display: flex;
   }

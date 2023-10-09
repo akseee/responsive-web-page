@@ -1,3 +1,7 @@
+.theme_light .decorated-zone__rec {
+  display: none;
+}
+
 .page.theme_light {
   --main-font-family: 'IBM Plex mono', monospace;
   --b-g: url(/images/cover-image-light.png);
@@ -15,10 +19,6 @@
   --gap: 20px;
 }
 
-.theme_light .decorated-zone__rec {
-  display: none;
-}
-
 @media (prefers-color-scheme: light) {
   .page {
     --b-g: url(/images/cover-image-light.png);
@@ -32,6 +32,7 @@
     --button-color: #353430;
     --hover: #32312d66;
   }
+
   .decorated-zone__rec {
     display: none;
   }

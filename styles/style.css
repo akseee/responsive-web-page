@@ -387,7 +387,7 @@
   .gallery__list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
   .gallery__title {
     margin-block-end: 10px;
