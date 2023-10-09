@@ -1,8 +1,9 @@
 .theme_dark .decorated-zone__rec {
   display: flex;
 }
+
 page.theme_dark {
-  --main-font-family: 'IBM Plex mono', monospace;
+  --main-font-family: "IBM Plex mono", monospace;
   --b-g: url(/images/cover-image-dark.png);
   --background-accent-color: #ff0070;
   --title-color: #db00ff;
@@ -11,14 +12,14 @@ page.theme_dark {
   --text-color: #000028;
   --accent-color: #ff0070;
   --accent-color-text: #ff0070;
-  --desktop-title-f-z:  clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --desktop-title-f-z: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --mobile-title-f-z: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --button-color: #ff0070;
   --hover: #ff007066;
   --gap: 20px;
 }
 
-@media  (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   .page {
     --b-g: url(/images/cover-image-dark.png);
     --background-accent-color: #ff0070;
@@ -31,7 +32,7 @@ page.theme_dark {
     --button-color: #ff0070;
     --hover: #ff007066;
   }
-  
+
   .decorated-zone__rec {
     display: flex;
   }
