@@ -303,7 +303,12 @@
   .gallery__list {
     grid-template-rows: 192px 230px 318px;
   }
+
+  .page .theme_light {
+    --shadow: #ffc2e6;
+  }
 }
+
 
 @media (width < 768px) {
   .header {
@@ -388,5 +393,8 @@
   }
   .gallery__title {
     margin-block-end: 10px;
+  }
+  .page .theme_light {
+    --shadow: #ffc2e6;
   }
 }
