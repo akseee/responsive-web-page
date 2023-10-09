@@ -2,7 +2,7 @@
   font-size: 18px;
   line-height: 130%;
   font-family: "IBM Plex mono", monospace;
-  background-image: var(--b-g, url(/images/cover-image-dark.png));
+  background-image: var(--b-g, url(../images/cover-image-dark.png));
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

@@ -3,7 +3,7 @@
 }
 
 .page.theme_light {
-  --b-g: url(/images/cover-image-light.png);
+  --b-g: url(../images/cover-image-light.png);
   --background-accent-color: #ff8dcb;
 
   --title-color: #ffc2e6;
@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --b-g: url(/images/cover-image-light.png);
+    --b-g: url(../images/cover-image-light.png);
     --background-accent-color: #ff8dcb;
     --title-color: #ffc2e6;
     --main-text-color: #353430;
