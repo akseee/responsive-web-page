@@ -342,8 +342,8 @@
 
   .main {
     gap: 50px;
-    margin-block-end: 40px;
     margin-block-start: 40px;
+    margin-block-end: 30px;
   }
 
   .main__content {
@@ -379,7 +379,9 @@
     flex-direction: column;
     gap: 5px;
   }
+
   .gallery__title {
     margin-block-end: 10px;
   }
+
 }
