@@ -376,14 +376,14 @@
     flex-direction: column;
   }
 
-  .gallery__list img {
-    display: block;  
-  }
-
   .gallery__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .gallery__list img {
+    display: block;
   }
 
   .gallery__title {
