@@ -225,10 +225,7 @@
 .gallery__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(192px, 260px) minmax(230px, 315px) minmax(
-      318xp,
-      428px
-    );
+  grid-template-rows: 260px 315px 428px;
   gap: var(--gap, 20px);
 }
 
