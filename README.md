@@ -1,7 +1,5 @@
-# Сложно сосредоточиться
+# Hard to focus
 
-Проект "Сложно сосредоточиться"
+This study project is an adaptive website that supports light and dark themes. The site will adapt to different screen resolutions and provide the user with the ability to switch between themes.
 
-https://github.com/akseee/slozhno-sosredotochitsya
-
-
+[Desploy](https://akseee.github.io/slozhno-sosredotochitsya/)
